@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>formulario</title>
+</head>
+
+<body className="">
+    <!-- encabezado de la pagina -->
+    <header>
+        <!-- contenido del encabezado -->
+            <h1 id="titulo">FORMULARIO DE PRUEBA</h1>
+            <img src="logo.png" id="img">
+    </header>
+    <!-- cuerpo de la pagina -->
+    <main>
+        <!-- formlario -->
+        <form id="contactForm">
+            <!-- campos -->
+            <label for="">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="">Correo electronico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <!-- Botón que envía el formulario llamando a la función enviarFormulario() en script.js -->
+            <button type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+        <div id="respuesta"></div>
+    </main>
+    <!-- enlazamos al archivo script.js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
